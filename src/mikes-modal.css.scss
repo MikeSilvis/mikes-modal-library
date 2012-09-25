@@ -1,0 +1,57 @@
+#mikes-modal{
+  z-index:3;
+  position:absolute;
+  // width: 98%;
+  background-color:white;
+  display:none;
+  .comments{
+    width: 280px;
+    text-align: left;
+    padding: 0px 30px;
+    vertical-align: top;
+    .comment{
+      padding-bottom: 10px;
+      .said-at{
+        color:#999999;
+        font-size:12px;
+      }
+    }
+    .new-comment{
+      width:98%;
+    }
+  }
+  .tags{
+    padding-bottom:100px;
+  }
+  .close {
+    position:absolute;
+    right:5;
+    cursor:pointer;
+  }
+  .title {
+    margin-bottom:0px;
+  }
+
+}
+#loading-modal{
+  position:absolute;
+  z-index:3;
+  width:220px;
+  height:220px;
+  top:50%;
+  left:50%;
+  margin-top:-110px;
+  margin-left:-110px;
+  background-color:#333;
+  border-radius: 20px;
+}
+#the-lights{
+  background-color:#000;
+  height:100%;
+  width:100%;
+  position:absolute;
+  opacity: 0.8;
+  top:0;
+  left:0;
+  z-index: 2;
+}
