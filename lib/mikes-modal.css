@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mikes-modal {
   z-index: 10001;
   position: fixed;
@@ -23,6 +24,45 @@
 #loading-modal {
   position: absolute;
   z-index: 10000;
+=======
+/* line 1, ../../app/assets/stylesheets/style.css.scss */
+#mikes-modal {
+  z-index: 9999999999;
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  left: 50%;
+  display: none;
+}
+/* line 8, ../../app/assets/stylesheets/style.css.scss */
+#mikes-modal img {
+  margin-top: -1px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+/* line 13, ../../app/assets/stylesheets/style.css.scss */
+#mikes-modal .description {
+  width: 280px;
+  text-align: left;
+  padding: 10px 30px;
+  vertical-align: top;
+}
+/* line 19, ../../app/assets/stylesheets/style.css.scss */
+#mikes-modal .close {
+  position: absolute;
+  right: 5;
+  cursor: pointer;
+}
+/* line 24, ../../app/assets/stylesheets/style.css.scss */
+#mikes-modal .title {
+  margin-bottom: 0px;
+}
+
+/* line 29, ../../app/assets/stylesheets/style.css.scss */
+#loading-modal {
+  position: absolute;
+  z-index: 9999999999;
+>>>>>>> github page
   width: 220px;
   height: 220px;
   top: 50%;
@@ -32,6 +72,11 @@
   background-color: #333;
   border-radius: 20px;
 }
+<<<<<<< HEAD
+=======
+
+/* line 41, ../../app/assets/stylesheets/style.css.scss */
+>>>>>>> github page
 #the-lights {
   background-color: #000;
   height: 100%;
@@ -40,5 +85,10 @@
   opacity: 0.9;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   z-index: 10000;
 }
+=======
+  z-index: 999999;
+}
+>>>>>>> github page
