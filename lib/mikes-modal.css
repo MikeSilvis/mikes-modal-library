@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .mikes-modal {
   z-index: 10001;
   position: fixed;
@@ -28,41 +29,38 @@
 /* line 1, ../../app/assets/stylesheets/style.css.scss */
 #mikes-modal {
   z-index: 9999999999;
+=======
+.mikes-modal {
+  z-index: 10001;
+>>>>>>> updating github page to user version 2.0
   position: fixed;
-  top: 50%;
   background-color: white;
   left: 50%;
+  top: 50%;
   display: none;
 }
-/* line 8, ../../app/assets/stylesheets/style.css.scss */
-#mikes-modal img {
-  margin-top: -1px;
-  margin-left: -1px;
-  margin-bottom: -1px;
+.mikes-modal img {
+  float: left;
 }
-/* line 13, ../../app/assets/stylesheets/style.css.scss */
-#mikes-modal .description {
-  width: 280px;
+.mikes-modal .description {
+  width: 300px;
+  float: right;
   text-align: left;
   padding: 10px 30px;
-  vertical-align: top;
 }
-/* line 19, ../../app/assets/stylesheets/style.css.scss */
-#mikes-modal .close {
+.mikes-modal .close {
   position: absolute;
-  right: 5;
+  right: 10px;
   cursor: pointer;
 }
-/* line 24, ../../app/assets/stylesheets/style.css.scss */
-#mikes-modal .title {
-  margin-bottom: 0px;
-}
-
-/* line 29, ../../app/assets/stylesheets/style.css.scss */
 #loading-modal {
   position: absolute;
+<<<<<<< HEAD
   z-index: 9999999999;
 >>>>>>> github page
+=======
+  z-index: 10000;
+>>>>>>> updating github page to user version 2.0
   width: 220px;
   height: 220px;
   top: 50%;
@@ -73,10 +71,13 @@
   border-radius: 20px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 /* line 41, ../../app/assets/stylesheets/style.css.scss */
 >>>>>>> github page
+=======
+>>>>>>> updating github page to user version 2.0
 #the-lights {
   background-color: #000;
   height: 100%;
@@ -86,9 +87,14 @@
   top: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   z-index: 10000;
 }
 =======
   z-index: 999999;
 }
 >>>>>>> github page
+=======
+  z-index: 10000;
+}
+>>>>>>> updating github page to user version 2.0
