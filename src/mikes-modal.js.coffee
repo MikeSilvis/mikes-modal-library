@@ -9,6 +9,7 @@ class MikesModal
     @modalBox.trigger "open"
     @imageLoaded()
     @triggerClose()
+    @addClose()
 
   createAllClasses: =>
     new Scrolling(@modalBox)
@@ -62,6 +63,9 @@ class MikesModal
 
   marginLeft: =>
     "-#{@modalBox.width() / 2}px"
+
+  addClose: =>
+    $("<div class='close'>x</div>").appendTo(".description")
 
 class TheLights
   constructor: (modalBox) ->

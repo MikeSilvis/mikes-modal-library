@@ -21,9 +21,8 @@ A special thanks to fgnass for the spin.js library: https://github.com/fgnass/sp
 <div class="mikes-modal">
   <img src='http://s3.amazonaws.com/ultimate_whip/garage_photos/photos/000/000/079/large/38779594009_original.jpeg?1349826286'>
   <div class="description">
-  <div class="close">x</div>
-      <h1>Title of Modal</h1>
-      <p>Put whatever content you need here. I personally used it for comments and tags :)</p>
+    <h1>Title of Modal</h1>
+    <p>Put whatever content you need here. I personally used it for comments and tags :)</p>
   </div>
 </div>
 ```
