@@ -1,4 +1,4 @@
-jQuery.fn.mikesModal = (action) ->
+$.fn.mikesModal = (action) ->
   @modal = new MikesModal $(this)
 
 class MikesModal
