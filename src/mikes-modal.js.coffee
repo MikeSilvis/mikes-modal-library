@@ -1,3 +1,5 @@
+#= require spin.min.js
+
 $.fn.mikesModal = (action) ->
   @modal = new MikesModal $(this)
 

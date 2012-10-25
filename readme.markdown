@@ -44,9 +44,10 @@ jQuery(function() {
 1. Fork it.
 2. Create a branch (`git checkout -b my_awesome_branch`)
 3. Edit the files in the src folder ONLY
-4. Commit your changes (`git commit -am "Added some magic"`)
-5. Push to the branch (`git push origin my_awesome_branch`)
-6. Send a pull request
+4. run cake build *note* you may need to run `npm install snockets`
+5. Commit your changes (`git commit -am "Added some magic"`)
+6. Push to the branch (`git push origin my_awesome_branch`)
+7. Send a pull request
 
 ## License
 
