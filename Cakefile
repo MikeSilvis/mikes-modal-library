@@ -7,7 +7,7 @@ OUTPUT_FILE = "lib/#{NAME}.min.js"
 
 task 'build', 'Build src/ from lib/', ->
   snockets = new Snockets()
-  js = snockets.getConcatenation INPUT_FILE, async: false, minify: true
+  js = snockets.getConcatenation INPUT_FILE, async: false, minify: false
   fs.writeFileSync OUTPUT_FILE, js
 
 task 'clean', "remove #{OUTPUT_FILE}", ->
