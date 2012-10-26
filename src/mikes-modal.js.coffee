@@ -77,8 +77,11 @@ class TheLights
 
   bindLoaded: =>
     @modalBox.bind "loaded", =>
-      @theLights = $("<div id='the-lights'></div>")
-      @theLights.appendTo("body").css height: $(document).height()
+      if $("#the-lights").length
+        @theLights = $("#the-lights")
+      else
+        @theLights = $("<div id='the-lights'></div>")
+        @theLights.appendTo("body").css height: $(document).height()
 
   bindClosed: =>
     @modalBox.bind "close", =>
