@@ -11,14 +11,14 @@
       jQuery(function() {
         $("#open-mikes-modal").click(function(e) {
           e.preventDefault();
-          $(".mikes-modal").mikesModal();
+          $("#myModal").mikesModal();
         });
       });
 
     </script>
   </head>
   <body>
-    <div class="mikes-modal">
+    <div class="mikes-modal" id="myModal">
       <img src='http://s3.amazonaws.com/ultimate_whip/garage_photos/photos/000/000/079/large/38779594009_original.jpeg?1349826286'>
       <div class="description">
         <h1>Title of Modal</h1>
