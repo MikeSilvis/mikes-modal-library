@@ -18,7 +18,7 @@ A special thanks to fgnass for the spin.js library: https://github.com/fgnass/sp
 
 2) Create a div on your page with the class .mikes-modal
 ```
-<div class="mikes-modal">
+<div class="mikes-modal" id="myModal">
   <img src='http://s3.amazonaws.com/ultimate_whip/garage_photos/photos/000/000/079/large/38779594009_original.jpeg?1349826286'>
   <div class="description">
     <h1>Title of Modal</h1>
@@ -34,9 +34,19 @@ A special thanks to fgnass for the spin.js library: https://github.com/fgnass/sp
 ```javascript
 jQuery(function() {
   $("#open-mikes-modal").click(function(e) {
-      $(".mikes-modal").mikesModal();
+      $("#myModal").mikesModal();
   });
 });
+```
+## Helpers
+For custom functions you can bind / trigger the following manually:
+```javascript
+  $("#myModal").trigger("open");
+  $("#myModal").trigger("close");
+  $("#myModal").bind("open", function() {
+    myCustomFunction();
+  });
+
 ```
 
 ## Contributing
