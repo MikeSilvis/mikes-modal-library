@@ -36,7 +36,7 @@ class MikesModal
       @modalBox.fadeIn("slow")
 
   imageLoaded: =>
-    @modalBox.find("img").load =>
+    @modalBox.find("img").first().load =>
       @imagePosition()
     if @modalBox.find("img")[0].complete
       @imagePosition()
