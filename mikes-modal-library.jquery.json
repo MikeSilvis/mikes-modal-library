@@ -1,0 +1,36 @@
+{
+  "name": "Mikes Modal Library",
+  "title": "Mikes Modal Library",
+  "description": "This is a library for creating a facebook like modal box to be used. It features an image on the left and content on the right. The image scales to the largest size possible while still fiting in your monitors resultion.",
+  "keywords": [
+    "modal",
+    "facebook",
+    "pictures",
+    "comments"
+  ],
+  "version": "0.1",
+  "author": {
+    "name": "Mike Silvis",
+    "url": "http://mikesilvis.com"
+  },
+  "maintainers": [
+    {
+      "name": "Mike Silvis",
+      "email": "mikesilvis@gmail.com",
+      "url": "http://mikesilvis.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+    }
+  ],
+  "bugs": "https://github.com/mikesilvis/mikes-modal-library/issues",
+  "homepage": "https://github.com/mikesilvis/mikes-modal-library",
+  "docs": "https://github.com/mikesilvis/mikes-modal-library",
+  "download": "http://code.jquery.com/#mikes-modal-library",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}
