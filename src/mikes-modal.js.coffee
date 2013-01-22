@@ -49,7 +49,7 @@ class MikesModal
   triggerClose: =>
     $(document).keyup (e) =>
       @modalBox.trigger "close" if e.keyCode is 27
-    $(document).click (e) =>
+    $(document).bind "touchend click", (e) =>
       @modalBox.trigger "close" if e.target.id is "the-lights"
     @modalBox.find(".close").click =>
       @modalBox.trigger "close"
@@ -67,7 +67,7 @@ class MikesModal
     "-#{@modalBox.width() / 2}px"
 
   addClose: =>
-    $(".description h1").before("<div class='close'>x</div>")
+    $(".description").before("<div class='close'>x</div>")
 
 class TheLights
   constructor: (modalBox) ->
