@@ -1,5 +1,5 @@
 {
-  "name": "Mikes-Modal-Library",
+  "name": "mikes-modal-library",
   "title": "Mikes Modal Library",
   "description": "This is a library for creating a facebook like modal box to be used. It features an image on the left and content on the right. The image scales to the largest size possible while still fiting in your monitors resultion.",
   "keywords": [
