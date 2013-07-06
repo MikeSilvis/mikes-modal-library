@@ -14,7 +14,7 @@ class MikesModal
     @triggerClose()
 
   createAllClasses: =>
-    new Scrolling(@modalBox)
+    #new Scrolling(@modalBox)
     new Loading(@modalBox)
     new TheLights(@modalBox)
 

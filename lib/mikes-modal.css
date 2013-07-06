@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 .mikes-modal {
   z-index: 10001;
-  position: fixed;
+  position: absolute;
   background-color: white;
   left: 50%;
   top: 50%;
@@ -25,42 +23,6 @@
 #loading-modal {
   position: absolute;
   z-index: 10000;
-=======
-/* line 1, ../../app/assets/stylesheets/style.css.scss */
-#mikes-modal {
-  z-index: 9999999999;
-=======
-.mikes-modal {
-  z-index: 10001;
->>>>>>> updating github page to user version 2.0
-  position: fixed;
-  background-color: white;
-  left: 50%;
-  top: 50%;
-  display: none;
-}
-.mikes-modal img {
-  float: left;
-}
-.mikes-modal .description {
-  width: 300px;
-  float: right;
-  text-align: left;
-  padding: 10px 30px;
-}
-.mikes-modal .close {
-  position: absolute;
-  right: 10px;
-  cursor: pointer;
-}
-#loading-modal {
-  position: absolute;
-<<<<<<< HEAD
-  z-index: 9999999999;
->>>>>>> github page
-=======
-  z-index: 10000;
->>>>>>> updating github page to user version 2.0
   width: 220px;
   height: 220px;
   top: 50%;
@@ -70,14 +32,6 @@
   background-color: #333;
   border-radius: 20px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-/* line 41, ../../app/assets/stylesheets/style.css.scss */
->>>>>>> github page
-=======
->>>>>>> updating github page to user version 2.0
 #the-lights {
   background-color: #000;
   height: 100%;
@@ -86,20 +40,17 @@
   opacity: 0.9;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   z-index: 10000;
 }
-=======
-  z-index: 999999;
+
+@media all and (max-width: 600px) {
+  .description { clear:both; width: 90% !important; }
+  .mikes-modal {
+    top:10%;
+    left:0%;
+    margin-top:0px !important;
+    margin-left: 0px !important;
+  }
+  .mikes-modal img { max-width:100% !important; max-height:100% !important; }
+  #comments { margin-top: 20px; }
 }
->>>>>>> github page
-=======
-  z-index: 10000;
-}
->>>>>>> updating github page to user version 2.0
-=======
-  z-index: 10000;
-}
->>>>>>> snockets

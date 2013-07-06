@@ -11,63 +11,25 @@
       jQuery(function() {
         $("#open-mikes-modal").click(function(e) {
           e.preventDefault();
-<<<<<<< HEAD
-          $(".mikes-modal").mikesModal();
-=======
           $("#myModal").bind("loaded", function() {
             $("#disqus_thread").css({
               "height": ($("#myModal").height() - 250)
             });
           });
           $("#myModal").mikesModal();
->>>>>>> updating comment box to be dynamic with image height
         });
       });
 
     </script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <style>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      #disqus_thread{
-<<<<<<< HEAD
-<<<<<<< HEAD
-        height:300px;
-=======
-        height: 450px;
-        overflow: auto;
->>>>>>> updating comments box
-=======
-      .title-area{
-        height: 30%;
-      }
-      .comments-area{
-        height: 70%;
-        overflow-y:auto;
->>>>>>> ...
-=======
-      #disqus_thread{
-        height: 450px;
-        overflow: auto;
->>>>>>> ...
-      }
-    </style>
-=======
->>>>>>> ...
-=======
     <style>
       #disqus_thread{
-=======
->>>>>>> updating comment box to be dynamic with image height
         height: 450px;
         overflow: auto;
       }
     </style>
->>>>>>> ...
   </head>
   <body>
-    <div class="mikes-modal">
+    <div class="mikes-modal" id="myModal">
       <img src='http://s3.amazonaws.com/ultimate_whip/garage_photos/photos/000/000/079/large/38779594009_original.jpeg?1349826286'>
       <div class="description">
         <div class='title-area'>
@@ -75,12 +37,8 @@
           <p>Put whatever content you need here. I personally used it for comments and tags :)</p>
         </div>
         <div class='comments-area'>
-<<<<<<< HEAD
-          <div id="disqus_thread"></div>
-=======
           <div id="disqus_thread" style='height:20px;'>
           </div>
->>>>>>> updating comment box to be dynamic with image height
           <script type="text/javascript">
               /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
               var disqus_shortname = 'mikesmodallibrary'; // required: replace example with your forum shortname

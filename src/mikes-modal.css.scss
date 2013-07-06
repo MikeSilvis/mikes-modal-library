@@ -1,45 +1,56 @@
-.mikes-modal{
-  z-index:10001;
-  position:fixed;
-  background-color:white;
+.mikes-modal {
+  z-index: 10001;
+  position: absolute;
+  background-color: white;
   left: 50%;
-  top:50%;
-  display:none;
-  img{
-    float:left;
-  }
-  .description{
-    width:300px;
-    float:right;
+  top: 50%;
+  display: none;
+  .description {
+    width: 300px;
+    float: right;
     text-align: left;
     padding: 10px 30px;
   }
   .close {
-    position:absolute;
-    right:10px;
-    cursor:pointer;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
   }
-
 }
-#loading-modal{
-  position:absolute;
-  z-index:10000;
-  width:220px;
-  height:220px;
-  top:50%;
-  left:50%;
-  margin-top:-110px;
-  margin-left:-110px;
-  background-color:#333;
+.mikes-modal img {
+  float: left;
+}
+#loading-modal {
+  position: absolute;
+  z-index: 10000;
+  width: 220px;
+  height: 220px;
+  top: 50%;
+  left: 50%;
+  margin-top: -110px;
+  margin-left: -110px;
+  background-color: #333;
   border-radius: 20px;
 }
-#the-lights{
-  background-color:#000;
-  height:100%;
-  width:100%;
-  position:absolute;
+#the-lights {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   opacity: 0.9;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 10000;
+}
+
+@media all and (max-width: 600px) {
+  .description { clear:both; width: 90% !important; }
+  .mikes-modal {
+    top:10%;
+    left:0%;
+    margin-top:0px !important;
+    margin-left: 0px !important;
+  }
+  .mikes-modal img { max-width:100% !important; max-height:100% !important; }
+  #comments { margin-top: 20px; }
 }
