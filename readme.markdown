@@ -1,12 +1,12 @@
 # Mike's Modal Library
 Mike's Modal Library is a Facebook like photo library written to support photos and comments on an individual photo.
 
-Example of the gallery: http://mikesilvis.github.com/mikes-modal-library/
+[Example of the gallery](http://mikesilvis.github.com/mikes-modal-library/)
 
-A special thanks to fgnass for the spin.js library: https://github.com/fgnass/spin.js/
+A special thanks to [fgnass](https://github.com/fgnass) for the [spin.js library](https://github.com/fgnass/spin.js/)
 
 ## Example Sites
-- http://m3snaps.com
+- [Auxotic](http://auxotic.com)
 
 ## Usage
 
