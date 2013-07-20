@@ -49,8 +49,6 @@ class MikesModal
   triggerClose: =>
     $(document).keyup (e) =>
       @modalBox.trigger "close" if e.keyCode is 27
-    $(document).bind "touchend click", (e) =>
-      @modalBox.trigger "close" if e.target.id is "the-lights"
     @modalBox.find(".close").click =>
       @modalBox.trigger "close"
 
@@ -61,7 +59,7 @@ class MikesModal
     window.innerHeight * .8
 
   marginTop: =>
-    "-#{@modalBox.height() / 2}px"
+    "-#{(@modalBox.height() / 2)}px"
 
   marginLeft: =>
     "-#{@modalBox.width() / 2}px"
@@ -74,6 +72,7 @@ class TheLights
     @modalBox = modalBox
     @bindLoaded()
     @bindClosed()
+    @bindClicks()
 
   bindLoaded: =>
     @modalBox.bind "loaded", =>
@@ -81,11 +80,17 @@ class TheLights
         @theLights = $("#the-lights")
       else
         @theLights = $("<div id='the-lights'></div>")
-        @theLights.appendTo("body").css height: $(document).height()
+        @theLights.appendTo("body")
 
   bindClosed: =>
     @modalBox.bind "close", =>
       @theLights.remove()
+
+  bindClicks: =>
+    $('body').on "click touchstart", "#the-lights", (event) =>
+      event.preventDefault()
+      event.stopPropagation()
+      @modalBox.trigger 'close'
 
 class Scrolling
   constructor: (modalBox) ->

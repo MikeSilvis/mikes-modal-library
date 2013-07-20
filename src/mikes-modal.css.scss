@@ -1,10 +1,16 @@
 .mikes-modal {
   z-index: 10001;
-  position: absolute;
+  position: fixed;
   background-color: white;
   left: 50%;
   top: 50%;
   display: none;
+  a {
+    text-decoration: none;
+  }
+  img {
+    float: left;
+  }
   .description {
     width: 300px;
     float: right;
@@ -15,11 +21,10 @@
     position: absolute;
     right: 10px;
     cursor: pointer;
+    opacity: 0.7;
   }
 }
-.mikes-modal img {
-  float: left;
-}
+
 #loading-modal {
   position: absolute;
   z-index: 10000;
@@ -32,11 +37,12 @@
   background-color: #333;
   border-radius: 20px;
 }
+
 #the-lights {
   background-color: #000;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   opacity: 0.9;
   top: 0;
   left: 0;
@@ -44,13 +50,30 @@
 }
 
 @media all and (max-width: 600px) {
-  .description { clear:both; width: 90% !important; }
   .mikes-modal {
-    top:10%;
-    left:0%;
-    margin-top:0px !important;
-    margin-left: 0px !important;
+    left: 0%;
+    margin: 0px !important;
+    position: relative;
+    display: inline-block;
+    .description {
+      clear: both;
+      width: 95% !important;
+      float: left;
+      padding: 2.5%;
+      background-color: white;
+    }
+    .close {
+      color: white;
+    }
+    img {
+      max-width: 100% !important;
+    }
+    #comments {
+      margin-top: 20px;
+    }
   }
-  .mikes-modal img { max-width:100% !important; max-height:100% !important; }
-  #comments { margin-top: 20px; }
+  #comments-area .new-comment {
+    position: inherit;
+    width: 100%;
+  }
 }
