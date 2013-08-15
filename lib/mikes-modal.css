@@ -54,7 +54,8 @@
       padding: 2.5%;
       background-color: white; }
     .mikes-modal .close {
-      color: white; top:0px; }
+      color: white;
+      top: 0px; }
     .mikes-modal img {
       max-width: 100% !important;
       max-height: 100% !important; }
@@ -63,4 +64,5 @@
 
   #comments-area .new-comment {
     position: inherit;
-    width: 100%; } }
+    width: 100%;
+    background-color: black; } }
