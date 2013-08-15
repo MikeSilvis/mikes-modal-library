@@ -49,12 +49,11 @@
   z-index: 10000;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .mikes-modal {
     left: 0%;
-    margin: 0px !important;
-    position: relative;
-    display: inline-block;
+    margin-left: 0px !important;
+    position: absolute;
     .description {
       clear: both;
       width: 95% !important;
@@ -64,9 +63,11 @@
     }
     .close {
       color: white;
+      top:0px;
     }
     img {
       max-width: 100% !important;
+      max-height: 100% !important;
     }
     #comments {
       margin-top: 20px;
