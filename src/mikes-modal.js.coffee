@@ -70,7 +70,7 @@ class MikesModal
     "-#{@modalBox.width() / 2}px"
 
   addClose: =>
-    $(".description").before("<div class='close'>x</div>")
+    $(".description").before("<div class='close'>&times;</div>")
 
 class TheLights
   constructor: (modalBox) ->
