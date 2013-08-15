@@ -11,13 +11,13 @@ A special thanks to [fgnass](https://github.com/fgnass) for the [spin.js library
 ## Usage
 
 1) Download the javascript, styles and include them.
-```
+```html
 <link type="text/css" rel="stylesheet" media="all" href="https://raw.github.com/MikeSilvis/mikes-modal-library/master/lib/mikes-modal.css">
 <script src="http://raw.github.com/MikeSilvis/mikes-modal-library/master/lib/mikes-modal.min.js" type="text/javascript"></script>
 ```
 
 2) Create a div on your page with the class .mikes-modal
-```
+```html
 <div class="mikes-modal" id="myModal">
   <img src='http://s3.amazonaws.com/ultimate_whip/garage_photos/photos/000/000/079/large/38779594009_original.jpeg?1349826286'>
   <div class="description">
@@ -27,7 +27,7 @@ A special thanks to [fgnass](https://github.com/fgnass) for the [spin.js library
 </div>
 ```
 3) Add a button, link, image or whatever you need to open the modal.
-```
+```html
 <a id="open-mikes-modal" class="btn btn-primary btn-large">Try it now!</a>
 ```
 4) Add a jQuery call back when you click the button
