@@ -14,7 +14,7 @@ task 'build', 'Build src/ from lib/', (opt) ->
   js = snockets.getConcatenation JS_INPUT_FILE , async: false, minify: true
   fs.writeFileSync JS_OUTPUT_FILE, js
   console.log "build #{JS_OUTPUT_FILE}"
-  system "sass #{CSS_INPUT_FILE} #{CSS_OUTPUT_FILE} --exclude *sass-cache*", (err) =>
+  system "sass #{CSS_INPUT_FILE} #{CSS_OUTPUT_FILE}", (err) =>
     console.log "build #{CSS_OUTPUT_FILE}" unless opt.silent
 
 task 'clean', "remove #{JS_OUTPUT_FILE}", ->

@@ -45,6 +45,7 @@ class MikesModal
     @modalBox.trigger("loaded").css "margin-top": @marginTop(), "margin-left": @marginLeft()
     @modalBox.css "margin-top": @marginTop(), "margin-left": @marginLeft() # Nasty hack to deal with image being resized for some reason...
     @modalBox.css "margin-top": @marginTop(), "margin-left": @marginLeft() # Nasty hack to deal with image being resized for some reason...
+    @modalBox.find(".description").css "height" : (@modalBox.find("img").height() - 20)
 
   triggerClose: =>
     $(document).keyup (e) =>
@@ -99,8 +100,9 @@ class TheLights
 class Scrolling
   constructor: (modalBox) ->
     @modalBox = modalBox
-    @bindFullLoaded()
-    @bindFullClosed()
+    if document.width > 700
+      @bindFullLoaded()
+      @bindFullClosed()
     @html = $("html")
 
   bindFullLoaded: =>

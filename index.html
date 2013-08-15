@@ -7,28 +7,17 @@
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
     <meta content="Mike Silvis" name="author" /><meta content="!" name="fragment" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="lib/mikes-modal-library.min.js" type="text/javascript"></script>
+    <script src="lib/mikes-modal.min.js" type="text/javascript"></script>
     <script>
 
       jQuery(function() {
         $("#open-mikes-modal").click(function(e) {
           e.preventDefault();
-          $("#myModal").bind("loaded", function() {
-            $("#disqus_thread").css({
-              "height": ($("#myModal").height() - 250)
-            });
-          });
           $("#myModal").mikesModal();
         });
       });
 
     </script>
-    <style>
-      #disqus_thread{
-        height: 450px;
-        overflow: auto;
-      }
-    </style>
   </head>
   <body>
     <div class="mikes-modal" id="myModal">
@@ -39,7 +28,7 @@
           <p>Put whatever content you need here. I personally used it for comments and tags :)</p>
         </div>
         <div class='comments-area'>
-          <div id="disqus_thread" style='height:20px;'>
+          <div id="disqus_thread">
           </div>
           <script type="text/javascript">
               /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
