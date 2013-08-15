@@ -13,7 +13,8 @@
     width: 300px;
     float: right;
     text-align: left;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    overflow-y: auto; }
   .mikes-modal .close {
     position: absolute;
     right: 10px;
