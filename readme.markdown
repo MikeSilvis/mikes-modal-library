@@ -1,7 +1,7 @@
 # Mike's Modal Library
-Mike's Modal Library is a Facebook like photo library written to support photos and comments on an individual photo.
+Mike's Modal Library is a Facebook-like photo library written to support photos and comments on an individual photo.
 
-[Example of the gallery](http://mikesilvis.github.com/mikes-modal-library/)
+[Example gallery](http://mikesilvis.github.com/mikes-modal-library/)
 
 A special thanks to [fgnass](https://github.com/fgnass) for the [spin.js library](https://github.com/fgnass/spin.js/)
 
@@ -10,7 +10,7 @@ A special thanks to [fgnass](https://github.com/fgnass) for the [spin.js library
 
 ## Usage
 
-1) Download the javascript, styles and include them.
+1) Download the JavaScript file and stylesheet, and include them.
 ```html
 <link type="text/css" rel="stylesheet" media="all" href="https://raw.github.com/MikeSilvis/mikes-modal-library/master/lib/mikes-modal.css">
 <script src="http://raw.github.com/MikeSilvis/mikes-modal-library/master/lib/mikes-modal.min.js" type="text/javascript"></script>
@@ -30,7 +30,7 @@ A special thanks to [fgnass](https://github.com/fgnass) for the [spin.js library
 ```html
 <a id="open-mikes-modal" class="btn btn-primary btn-large">Try it now!</a>
 ```
-4) Add a jQuery call back when you click the button
+4) Add a jQuery callback when you click the button
 ```javascript
 jQuery(function() {
   $("#open-mikes-modal").click(function(e) {
